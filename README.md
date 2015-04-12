@@ -6,4 +6,5 @@ CRUD BLOG UTILIZANDO CAKEPHP 2.6.3
 
 CRUD de usuarios > http://localhost/blog/users
 CRUD de posts > http://localhost/blog/posts
+Cadastrar usuario > http://maximuskim.cuccfree.com/blog/users/signup
 Página de configurações visivel apenas para admin > http://localhost/blog/users/config
