@@ -1,0 +1,19 @@
+<h2>Usuario</h2>
+
+<b>Usuario:</b><br> 
+<table>
+	<tr>
+		<td>ID</td>
+		<td>Nome</td>
+		<td>Username</td>
+		<td>Role</td>
+		<td>Email</td>
+	</tr>
+	<tr>
+		<td><?=$user['User']['id']?></td>
+		<td><?=$user['User']['name']?></td>
+		<td><?=$user['User']['username']?></td>
+		<td><?=$user['User']['role']?></td>
+		<td><?=$user['User']['email']?></td>
+	</tr>
+</table>
