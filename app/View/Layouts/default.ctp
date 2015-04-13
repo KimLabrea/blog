@@ -39,16 +39,16 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<div id="container">
 		<div id="header">
 			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-			<a href="http://localhost/blog/users">Usuários</a> | <a href="http://localhost/blog/posts">Posts</a> | 
+			<?php echo $this->Html->link('Usuários','/users'); ?> | <?php echo $this->Html->link('Posts','/posts'); ?> | 
 			
 			<?php 
 				if (!$this->Session->read('Auth.User.username')) 
-					echo"<a href='http://localhost/blog/users/login'>Login</a> | ";  
+					echo $this->Html->link('Login','/users/login');
 				else
-					echo"<a href='http://localhost/blog/users/logout'>Logout</a> | ";
+					echo $this->Html->link('Logout','/users/logout');
 			?>
 			
-			<a href="http://localhost/blog/users/config">Configurações</a> 
+			| <?php echo $this->Html->link('Configurações','/users/config'); ?>
 		</div>
 		<div id="content">
 
